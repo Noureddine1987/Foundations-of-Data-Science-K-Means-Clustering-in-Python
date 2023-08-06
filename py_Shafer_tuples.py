@@ -11,4 +11,24 @@ print(courses_tuple2)
 
 print(courses_tuple1[0])
 
+# Sets : don't care about order, sets didn't allow double items
+courses_set1 = {'algorithme', 'base de donnee', 'structure machine'}
+courses_set2 = {'algorithme', 'analyse', 'stat'}
+print(courses_set1)
+print(courses_set2)
+
+# set do verification of exist item more efficiently than list and tuples
+print('math' in courses_set1)
+
+# sets operators : union etc etc
+print(courses_set1.intersection(courses_set2))
+print(courses_set1.union(courses_set2))
+
+empty_list = []
+empty_tuple = ()
+empty_set = {}
+print(empty_list)
+
+
+
 
