@@ -35,3 +35,6 @@ print('distance btw', xyz[2], 'and ', mean_xy, ':', np.linalg.norm(xyz[2]-mean_x
 print('distance btw', xyz[3], 'and ', mean_xy, ':', np.linalg.norm(xyz[3]-mean_xy))
 print('='*50)
 print(np.linalg.norm(xyz[:, :]-mean_xy))
+# list comprehension : apply a function to every item in a list.
+dists = [np.linalg.norm(point-mean_xy) for point in xyz]
+print(dists)
